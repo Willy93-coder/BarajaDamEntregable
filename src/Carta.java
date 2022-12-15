@@ -4,24 +4,29 @@
  * */
 public class Carta {
     // Atributos
-    private String[] coll = {"OROS", "COPAS", "BASTOS", "ESPADAS"};
-    private int[] num = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+    private String coll;
+    private int num;
 
     // Constructor por defecto
     public Carta() {
     }
 
-    /**
-     * Método para devolver el array de coll
-     */
-    public String[] getColl() {
+    // Métodos para obtener los valores
+
+    public String getColl() {
         return coll;
     }
 
-    /**
-     * Método para devolver el array de num
-     */
-    public int[] getNum() {
+    public int getNum() {
         return num;
+    }
+
+    // Métodos para cambiar el valor de la carta
+    public void setColl(String coll) {
+        this.coll = coll;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
     }
 }
